@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-size: cover;
+    min-height: 100vh;
+    background-color: black;
+    padding: 30px;
+    /* overflow-y: hidden; */
+    overflow-x: hidden;
+}
+
+.main{
+    border-radius: 30px;
+    background-image: url('assets/Group\ 25.png');
+    min-height: 90vh;
+    min-height: 90vh;
+    background-position: center center;
+    padding: 20px 150px;
+    background-size: contain; /* Make the background image fully appear */
+    background-repeat: no-repeat;
+}
+
+.header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding: 0px 50px;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: "Playfair Display", serif;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    column-gap: 1.5rem;
+}
+
+.nav{
+    display: flex;
+    column-gap: 1.5rem;
+}
+
+ul{
+    list-style: none;
+}
+
+.navbar a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    padding: 1rem 1rem;
+}
+
+.buy_ticket {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    border-radius: 30px; /* Adds rounded corners */
+    background: linear-gradient(90deg, #023CDD, #F006C9);
+    padding: 10px 30px;
+    border: none;
+}
+
+.maximus{
+
+}
+
+h1 {
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 120px;
+    font-weight: 300;
+    color: #F5F6FF;
+    padding-left: 40px;
+    border: 0px;
+    margin: 0px;
+    margin-top: 90px;
+    position: relative; /* Needed for the pseudo-element */
+}
+
+/* Pseudo-element for background blur */
+h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust background color and opacity as needed */
+    filter: blur(10px); /* Apply blur effect */
+    z-index: -1; /* Ensure it is behind the text */
+    border-radius: 10px; /* Optional: Add border radius for smoother edges */
+}
+
+/* Inner shadow effect */
+h1 {
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.7), /* Shadow for depth */
+        -2px -2px 4px rgba(255, 255, 255, 0.7); /* Inner shadow effect */
+}
+
+
+
+h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    padding-left: 57px;
+    border: 0px;
+    margin: 0px;
+}
+.sponsor{
+    margin: 0px;
+    border: 0px;
+}
+
+.sponsor_logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 500px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1.5rem;
+}
+/* .details ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+} */
+h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    color: white; 
+    margin: 0px;
+    border: 0px;
+}
+
+h4{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: white; 
+    margin: 0px;
+    border: 0px;
+}
+.book_now {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 30px; /* Adds rounded corners */
+    background: linear-gradient(90deg, #023CDD, #F006C9);
+    padding: 20px 35px;
+    border: none;
+    margin-right: 50px;
+}
+.details {
+    background: rgba(255, 255, 255, 0.5); /* Transparent white background */
+    border-top: 1px solid white; /* Border on top */
+    border-left: 1px solid white; /* Border on left side */
+    border-bottom: 15px solid white; /* Border on bottom */
+    border-right: 15px solid white; /* Border on right side */
+    border-radius: 30px; /* Border radius */
+    padding: 20px; /* Optional padding for better spacing */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* max-width: 1000px; */
+    /* padding-left: 100px; */
+    margin: 0 40px;
+    margin-top: 100px;
+}
+
+.details ul {
+    list-style: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex;
+    align-items: center;
+}
+.details li{
+    margin: 0 50px;
+}
